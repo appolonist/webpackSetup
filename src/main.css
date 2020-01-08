@@ -1,3 +1,7 @@
 body{
     background: #FB9304;
 }
+.pure-button {
+    -webkit-border-radius: 1em;
+    border-radius: 1em;
+  }

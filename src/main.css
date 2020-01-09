@@ -1,5 +1,8 @@
 body{
     background: #FB9304;
+    background-image: url("./img/image.png");
+    background-repeat: no-repeat;
+    background-position: center;
 }
 .pure-button {
     -webkit-border-radius: 1em;

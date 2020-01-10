@@ -12,7 +12,11 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@babel/core": "^7.7.7",
+    "@babel/polyfill": "^7.7.0",
+    "@babel/preset-env": "^7.7.7",
     "autoprefixer": "^9.7.3",
+    "babel-loader": "^8.0.6",
     "css-loader": "^3.4.1",
     "dotenv": "^8.2.0",
     "error-overlay-webpack-plugin": "^0.4.1",

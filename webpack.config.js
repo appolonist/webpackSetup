@@ -18,6 +18,7 @@ const commonConfig = merge([
         ],
         devtool: 'cheap-module-source-map' // 'eval' is not supported by error-overlay-webpack-plugin
     },
+    parts.loadJavaScript({ include: PATHS.app }),
 ]);
 
 const productionConfig = merge([
@@ -45,6 +46,9 @@ const developmentConfig = merge([
 ]);
 
 module.exports = mode => {
+
+    process.env.BABEL_ENV = mode;
+
     if (mode === "production") {
         return merge(commonConfig, productionConfig, { mode });
     }

@@ -3,7 +3,7 @@
         [
             "@babel/preset-env",
             {
-                "modules": false,
+                "modules": false
             }
         ]
     ],
@@ -13,6 +13,5 @@
                 "annotate-console-log"
             ]
         }
-    },
-    "useBuiltIns": true
+    }
 }

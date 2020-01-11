@@ -41,8 +41,9 @@ const developmentConfig = merge([
         host: process.env.HOST,
         port: process.env.PORT,
     }),
-    parts.loadCSS(),
+    parts.purifyCSS(), // or loadCSS need to check !!!
     parts.loadImages(),
+    parts.loadHTML()
 ]);
 
 module.exports = mode => {

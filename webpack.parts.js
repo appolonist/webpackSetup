@@ -80,10 +80,22 @@ exports.loadJavaScript = ({ include, exclude } = {}) => ({
     module: {
         rules: [
             {
-                test: /\.js$/,
+                test: /\.(js|jsx)$/,
                 include,
                 exclude,
                 use: "babel-loader",
+            },
+        ],
+    },
+});
+exports.loadHTML = ({ include, exclude } = {}) => ({
+    module: {
+        rules: [
+            {
+                test: /\.html$/,
+                include,
+                exclude,
+                use: "html-loader",
             },
         ],
     },
